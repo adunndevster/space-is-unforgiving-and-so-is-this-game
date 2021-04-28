@@ -1,0 +1,8 @@
+{
+  "name": "Space is unforgiving, and so is this game",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue",
+  "id": "b36f237b"
+}
