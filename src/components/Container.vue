@@ -8,7 +8,7 @@
 <script lang="ts">
 
 export default {
-  name: 'ExploreContainer',
+  name: 'Container',
   props: {
     name: String
   }
