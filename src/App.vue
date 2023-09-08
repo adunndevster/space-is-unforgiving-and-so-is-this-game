@@ -21,6 +21,12 @@ body
   background-repeat: no-repeat !important;
   background-size: cover !important;
   color: white!important;
+  background-color: black;
+}
+
+button
+{
+  background-color: #c34a42;
 }
 
 .title

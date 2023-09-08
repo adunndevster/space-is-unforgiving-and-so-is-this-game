@@ -2,7 +2,7 @@
   <div id="container">
     <div class="title"><img src="../assets/images/supernova.png" /></div>
     <button @click="plusClick">+100</button>
-    <div class="counter">{{count}}</div>
+    <div class="counter">{{parentCount}}</div>
     <button @click="minusClick">-100</button>
   </div>
 </template>
@@ -13,21 +13,14 @@ import { defineComponent } from 'vue';
 export default defineComponent( {
   name: 'SuperNovaCounter',
   props: {
-    name: String
-  },
-  data() {
-    return {
-      count: 0
-    }
+    parentCount: Number
   },
   methods: {
     plusClick() {
-      this.count += 100;
-      this.$emit('changed', this.count);
+      this.$emit('changed', 100);
     },
     minusClick() {
-      if(this.count > 0) this.count -= 100;
-      this.$emit('changed', this.count);
+      this.$emit('changed', -100);
     }
   }
   
